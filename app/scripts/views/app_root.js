@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import NavBar from './NavBar';
+
 
 export default React.createClass({
   render: function () {
     return (
-      <section>
-        <h1>Whoa!</h1>
-      </section>
+      <main>
+        <NavBar />
+      </main>
     );
   }
 });
