@@ -1,5 +1,5 @@
 export default function logger (store) {
-  return function (next) {
+  return function (next)  {
     return function (action) {
       console.groupCollapsed(action.type);
       console.info('Dispatched:', action)
