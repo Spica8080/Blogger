@@ -5,7 +5,7 @@ export default React.createClass({
   render: function() {
     return (
       <nav>
-        Medium
+        The Isha Blog
         <Link dest="#blog" name="Blog" />
         <Link dest="#about" name="About" />
         <Link dest="#contact" name="Contact" />

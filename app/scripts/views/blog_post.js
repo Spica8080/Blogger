@@ -1,14 +1,29 @@
 import React from "react";
 
 export default React.createClass({
+  getInitialState: function() {
+    return {
+      hiddenBody: false
+    };
+  },
+  handleclick: function() {
+    this.setState({ hiddenBody: !this.state.hiddenBody });
+  },
   render: function() {
-    return (
-      <article className="blog_post">
-        <h2>The Mind</h2>
-        <p>
-          This #mind is not about drawing #conclusions - this is a tool for exploration.
-        </p>
-      </article>
-    );
+    if (this.state.hiddenBody === true) {
+      return (
+        <article className="blog-post">
+          <h2 onClick={this.handleclick}>{this.props.title}</h2>
+
+        </article>
+      );
+    } else {
+      return (
+        <article className="blog-post">
+          <h2 onClick={this.handleclick}>{this.props.title}</h2>
+          <p>{this.props.body}</p>
+        </article>
+      );
+    }
   }
 });
