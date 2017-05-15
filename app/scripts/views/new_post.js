@@ -8,7 +8,7 @@ export default React.createClass({
         <input />
         <h4>Body</h4>
         <textarea className="post-body" />
-        <button>Submit</button>
+        <button className="submit-button">Submit</button>
       </form>
     );
   }

@@ -4,7 +4,7 @@ import Link from "./Link";
 export default React.createClass({
   render: function() {
     return (
-      <nav>
+      <nav className="nav-bar">
         The Isha Blog
         <Link dest="#blog" name="Blog" />
         <Link dest="#about" name="About" />

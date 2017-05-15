@@ -1,1 +1,49 @@
+@import "variables";
 
+
+
+body {
+  font-family: Helvetica Neue, sans-serif;
+  background: $color-lightteal;
+  color: $color-lightroyalblue;
+}
+
+.nav-bar {
+  display: inline-block;
+  padding: 8px 0;
+  vertical-align: middle;
+  line-height: 1;
+  border-bottom: 2px solid transparent;
+}
+
+.blog-post {
+  border: 3px solid $color-lightteal;
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.blog-title {
+  color: $color-lightroyalblue;
+  background: $color-darkteal;
+}
+
+.submit-button {
+  color: $color-royalblue;
+  background: $color-darkteal;
+  border: none;
+  box-shadow: 3px 3px $color-lightteal;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin: 1rem;
+}
+
+form {
+  text-align: center;
+  input {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
