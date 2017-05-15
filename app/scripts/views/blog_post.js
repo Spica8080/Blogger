@@ -13,7 +13,9 @@ export default React.createClass({
     if (this.state.hiddenBody === true) {
       return (
         <article className="blog-post">
-          <h2 onClick={this.handleclick}>{this.props.title}</h2>
+          <h2 className="blog-title" onClick={this.handleclick}>
+            {this.props.title}
+          </h2>
 
         </article>
       );

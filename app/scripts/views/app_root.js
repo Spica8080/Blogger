@@ -28,7 +28,7 @@ export default React.createClass({
           title="Spiritual Master"
           body="There is an intellignece within you, where there is no memory."
         />
-        <NewPost />
+        <NewPost / >
 
       </main>
     );
